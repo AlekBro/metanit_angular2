@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
+
+  name = "Tom";
+  valueName = "Bill";
 
   constructor() { }
 
-  ngOnInit() {
+
+  count: number = 0;
+  increase(): void {
+    this.count++;
+  }
+
+  increaseWithEvent($event): void {
+    this.count++;
+    console.log($event);
   }
 
 }
