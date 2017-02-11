@@ -10,6 +10,8 @@ export class DataBindingComponent {
   name = "Tom";
   valueName = "Bill";
 
+  twoWayBindingName: string = "Aleks";
+
   constructor() { }
 
 
